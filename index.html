@@ -1,122 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mandragora — Privacy Policy / Polityka prywatności</title>
-<style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-         max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6;
-         color: #1b1b1b; }
-  h1 { color: #2D6A4F; }
-  h2 { color: #2D6A4F; margin-top: 2rem; }
-  hr { margin: 3rem 0; border: none; border-top: 1px solid #ddd; }
-  code { background: #f2f2f2; padding: 0 .3em; border-radius: 3px; }
-  .muted { color: #666; font-size: .9rem; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandragora — Offline Houseplant Care Android App</title>
+  <meta name="description" content="Mandragora is a privacy-first, offline-first Android application designed for houseplant care tracking, schedules, propagation, and diary entries.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<h1>Mandragora — Privacy Policy</h1>
-<p class="muted">Last updated: 1 June 2026 · Developer: Marchevo (Miłosz Marchwant) · Contact: marchevo.it@gmail.com</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img src="assets/icon.png" alt="Mandragora Icon" class="brand-img">
+        <span class="brand-name">Mandragora</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features" data-en="Features" data-pl="Funkcje">Features</a>
+        <a href="#privacy" data-en="Privacy" data-pl="Prywatność">Privacy</a>
+        <a href="#faq" data-en="FAQ" data-pl="FAQ">FAQ</a>
+        <a href="https://mmarchwant.github.io/mandragora-privacy/" target="_blank" rel="noopener" data-en="Privacy Policy" data-pl="Polityka Prywatności">Privacy Policy</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+          <span id="lang-label">🇵🇱 PL</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<p>Mandragora is an offline-first houseplant care app. We designed it so that your
-data stays on your device. This policy explains what that means.</p>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span data-en="Android App · 100% Offline & Private" data-pl="Aplikacja Android · 100% Offline i Prywatność">Android App · 100% Offline & Private</span>
+          </div>
+          <h1 class="hero-title">
+            <span data-en="Nurture your indoor jungle with confidence." data-pl="Pielęgnuj swoją domową dżunglę z pewnością.">Nurture your indoor jungle with confidence.</span>
+          </h1>
+          <p class="hero-subtitle" data-en="Mandragora is a sleek, offline-first Android app built for plant lovers. Track care schedules, organize rooms, monitor propagations, and keep a visual diary of every leaf—all stored safely on your device." data-pl="Mandragora to elegancka aplikacja Android działająca offline, stworzona dla miłośników roślin. Śledź harmonogramy pielęgnacji, organizuj pokoje, monitoruj sadzonki i prowadź fotodziennik – wszystko bezpiecznie na Twoim urządzeniu.">
+            Mandragora is a sleek, offline-first Android app built for plant lovers. Track care schedules, organize rooms, monitor propagations, and keep a visual diary of every leaf—all stored safely on your device.
+          </p>
+          <div class="hero-buttons">
+            <a href="#features" class="btn btn-primary">
+              <span data-en="Explore Features" data-pl="Odkryj Funkcje">Explore Features</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://mmarchwant.github.io/mandragora-privacy/" target="_blank" class="btn btn-secondary" data-en="Privacy Policy" data-pl="Polityka Prywatności">Privacy Policy</a>
+          </div>
+          <div class="hero-preview">
+            <img id="app-preview-img" src="assets/bg_en.png" alt="Mandragora App Showcase" class="app-mockup">
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🔒</span>
+              <span data-en="Zero Data Collection" data-pl="Brak Zbierania Danych">Zero Data Collection</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <span data-en="100% Offline First" data-pl="Działa 100% Offline">100% Offline First</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>What data the app stores</h2>
-<p>Everything you create in Mandragora — your plants, rooms, care schedules, care
-history, propagations, photos, and diary entries — is stored <strong>locally on your
-device</strong> using an on-device database and your device's local file storage.
-Photos you take are saved inside the app's private storage. None of this data is
-transmitted to us or to any server we control.</p>
+    <!-- Capabilities Grid -->
+    <section id="features" class="features section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Everything your plants need" data-pl="Wszystko, czego potrzebują Twoje rośliny">Everything your plants need</h2>
+          <p class="section-subtitle" data-en="Designed from the ground up to offer rich plant care functionality without compromising on speed or privacy." data-pl="Zaprojektowana od podstaw, aby oferować bogatą funkcjonalność bez kompromisów w zakresie szybkości czy prywatności.">Designed from the ground up to offer rich plant care functionality without compromising on speed or privacy.</p>
+        </div>
 
-<h2>Data we collect</h2>
-<p><strong>None.</strong> Mandragora has no account system, no sign-in, and no analytics
-or tracking. We (the developer) do not collect, receive, store, or have access to any
-of your personal data or app content.</p>
+        <div class="grid grid-3">
+          <!-- Card 1 -->
+          <div class="card feature-card">
+            <div class="card-icon green">🏠</div>
+            <h3 data-en="Plant & Room Management" data-pl="Organizacja Roślin i Pokoi">Plant & Room Management</h3>
+            <p data-en="Group your houseplants by room or location. Maintain detailed profiles for each plant with customized lighting and watering requirements." data-pl="Grupuj rośliny domowe według pokoi i lokalizacji. Prowadź szczegółowe profile dla każdej rośliny z określeniem wymagań świetlnych i wodnych.">Group your houseplants by room or location. Maintain detailed profiles for each plant with customized lighting and watering requirements.</p>
+          </div>
 
-<h2>Permissions</h2>
-<p><strong>Camera</strong> — used only when you choose to take a photo of a plant or a
-propagation. Photos are stored locally on your device and are never uploaded by us.</p>
+          <!-- Card 2 -->
+          <div class="card feature-card">
+            <div class="card-icon emerald">💧</div>
+            <h3 data-en="Smart Care Schedules" data-pl="Harmonogramy Pielęgnacji">Smart Care Schedules</h3>
+            <p data-en="Set flexible reminders for watering, fertilizing, misting, pruning, or repotting. Keep a complete log of past care activities." data-pl="Ustawiaj elastyczne przypomnienia o podlewaniu, nawożeniu, zraszaniu, przycinaniu i przesadzaniu. Prowadź pełny dziennik wykonanych zabiegów.">Set flexible reminders for watering, fertilizing, misting, pruning, or repotting. Keep a complete log of past care activities.</p>
+          </div>
 
-<h2>Optional AI features</h2>
-<p>Some optional features may use a third-party AI service. These work only if you
-provide your own API key. When you actively use such a feature, the relevant text you
-submit is sent directly from your device to the AI provider you configured, under that
-provider's own privacy policy. We do not receive, proxy, or store this data, and the
-app ships with no API keys of its own. If you never enter a key, no data leaves your
-device.</p>
+          <!-- Card 3 -->
+          <div class="card feature-card">
+            <div class="card-icon teal">🌱</div>
+            <h3 data-en="Propagation Tracker" data-pl="Śledzenie Rozmnażania">Propagation Tracker</h3>
+            <p data-en="Monitor your cuttings and saplings through every root milestone. Track propagation medium, start date, and success rate." data-pl="Śledź sadzonki na każdym etapie ukorzeniania. Notuj podłoże, datę rozpoczęcia i postępy w rozwoju młodych roślin.">Monitor your cuttings and saplings through every root milestone. Track propagation medium, start date, and success rate.</p>
+          </div>
 
-<h2>Data sharing</h2>
-<p>We do not sell, share, or transfer your data to anyone, because we do not have access
-to it in the first place.</p>
+          <!-- Card 4 -->
+          <div class="card feature-card">
+            <div class="card-icon lime">📸</div>
+            <h3 data-en="Visual Diary & Photo Log" data-pl="Fotodziennik i Historia">Visual Diary & Photo Log</h3>
+            <p data-en="Capture photos directly in the app to document growth progress or identify problems over time. Saved securely in local app storage." data-pl="Rób zdjęcia w aplikacji, aby dokumentować wzrost i obserwować zmiany w czasie. Fotografie są bezpiecznie zapisywane w pamięci lokalnej.">Capture photos directly in the app to document growth progress or identify problems over time. Saved securely in local app storage.</p>
+          </div>
 
-<h2>Children</h2>
-<p>Mandragora is suitable for general audiences and does not knowingly collect data from
-anyone, including children.</p>
+          <!-- Card 5 -->
+          <div class="card feature-card">
+            <div class="card-icon dark-green">🛡️</div>
+            <h3 data-en="100% On-Device Privacy" data-pl="100% Prywatności na Urządzeniu">100% On-Device Privacy</h3>
+            <p data-en="No registration, no accounts, and no background tracking. Your plant collection, photos, and notes never leave your phone." data-pl="Brak rejestracji, kont oraz śledzenia w tle. Twoja kolekcja roślin, zdjęcia i notatki nigdy nie opuszczają Twojego telefonu.">No registration, no accounts, and no background tracking. Your plant collection, photos, and notes never leave your phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Data deletion</h2>
-<p>Because all data lives on your device, you can delete it at any time by removing
-individual items in the app, or by uninstalling the app, which removes all app data.</p>
+    <!-- Privacy Banner -->
+    <section id="privacy" class="privacy-section section">
+      <div class="container">
+        <div class="privacy-box">
+          <div class="privacy-badge">🔒 Privacy First / Prywatność Przede Wszystkim</div>
+          <h2 data-en="Your data belongs to you. Period." data-pl="Twoje dane należą tylko do Ciebie.">Your data belongs to you. Period.</h2>
+          <p data-en="Mandragora is engineered as an offline-first application. All data—including plant records, care history, photos, and diary entries—is saved in an on-device database and local app storage. We do not maintain user servers or analytics trackers." data-pl="Mandragora została zaprojektowana jako aplikacja działająca w pierwszej kolejności offline. Wszystkie dane – w tym rejestr roślin, historia zabiegów, zdjęcia i wpisy – są zapisywane w lokalnej bazie danych urządzenia. Nie utrzymujemy serwerów użytkowników ani skryptów analitycznych.">
+            Mandragora is engineered as an offline-first application. All data—including plant records, care history, photos, and diary entries—is saved in an on-device database and local app storage. We do not maintain user servers or analytics trackers.
+          </p>
+          <div class="privacy-grid">
+            <div class="privacy-item">
+              <span class="check">✓</span>
+              <span data-en="No user accounts or sign-in" data-pl="Brak logowania i zakładania kont">No user accounts or sign-in</span>
+            </div>
+            <div class="privacy-item">
+              <span class="check">✓</span>
+              <span data-en="No telemetry or advertising SDKs" data-pl="Brak sygnałów telemetrycznych i reklam">No telemetry or advertising SDKs</span>
+            </div>
+            <div class="privacy-item">
+              <span class="check">✓</span>
+              <span data-en="Camera access only for local photos" data-pl="Dostęp do aparatu tylko do lokalnych zdjęć">Camera access only for local photos</span>
+            </div>
+            <div class="privacy-item">
+              <span class="check">✓</span>
+              <span data-en="Complete control: uninstalling deletes all data" data-pl="Odinstalowanie usuwa wszystkie dane z urządzenia">Complete control: uninstalling deletes all data</span>
+            </div>
+          </div>
+          <div class="privacy-cta">
+            <a href="https://mmarchwant.github.io/mandragora-privacy/" target="_blank" class="btn btn-light" data-en="Read Full Privacy Policy" data-pl="Przeczytaj pełną Politykę Prywatności">Read Full Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted at this URL with a new
-"last updated" date.</p>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-en="Frequently Asked Questions" data-pl="Najczęściej zadawane pytania">Frequently Asked Questions</h2>
+        </div>
 
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:marchevo.it@gmail.com">marchevo.it@gmail.com</a></p>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-en="Is Mandragora free to use?" data-pl="Czy Mandragora jest darmowa?">Is Mandragora free to use?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-en="Yes, Mandragora is an independent project with no forced subscriptions or paywalls for core offline functionality." data-pl="Tak, Mandragora to niezależny projekt bez wymuszonych subskrypcji czy płatności za podstawowe funkcje offline.">Yes, Mandragora is an independent project with no forced subscriptions or paywalls for core offline functionality.</p>
+            </div>
+          </div>
 
-<hr>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-en="Where is my data stored?" data-pl="Gdzie przechowywane są moje dane?">Where is my data stored?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-en="All your plants, photos, schedules, and logs stay 100% locally on your phone in internal app storage." data-pl="Wszystkie Twoje rośliny, zdjęcia, harmonogramy i notatki znajdują się w 100% lokalnie na Twoim telefonie w wewnętrznej pamięci aplikacji.">All your plants, photos, schedules, and logs stay 100% locally on your phone in internal app storage.</p>
+            </div>
+          </div>
 
-<h1>Mandragora — Polityka prywatności</h1>
-<p class="muted">Ostatnia aktualizacja: 1 czerwca 2026 · Wydawca: Marchevo (Miłosz Marchwant) · Kontakt: marchevo.it@gmail.com</p>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-en="How can I contact the developer?" data-pl="Jak mogę skontaktować się z twórcą?">How can I contact the developer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-en="You can reach out via email to marchevo.it@gmail.com for inquiries or feedback." data-pl="Możesz skontaktować się mailowo pod adresem marchevo.it@gmail.com w sprawie pytań lub uwag.">You can reach out via email to marchevo.it@gmail.com for inquiries or feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<p>Mandragora to aplikacja do pielęgnacji roślin domowych działająca w trybie offline.
-Zaprojektowaliśmy ją tak, aby Twoje dane pozostawały na Twoim urządzeniu.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-icon">🌿</span>
+        <span class="brand-name">Mandragora</span>
+        <p data-en="Offline houseplant care tracking for Android." data-pl="Aplikacja offline do pielęgnacji roślin dla systemu Android.">Offline houseplant care tracking for Android.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-en="Navigation" data-pl="Nawigacja">Navigation</h4>
+          <a href="#features" data-en="Features" data-pl="Funkcje">Features</a>
+          <a href="#privacy" data-en="Privacy" data-pl="Prywatność">Privacy</a>
+          <a href="#faq" data-en="FAQ" data-pl="FAQ">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Legal & Contact" data-pl="Prawa i Kontakt">Legal & Contact</h4>
+          <a href="https://mmarchwant.github.io/mandragora-privacy/" target="_blank" data-en="Privacy Policy" data-pl="Polityka Prywatności">Privacy Policy</a>
+          <a href="mailto:marchevo.it@gmail.com">marchevo.it@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Marchevo (Miłosz Marchwant). <span data-en="All rights reserved." data-pl="Wszelkie prawa zastrzeżone.">All rights reserved.</span></p>
+    </div>
+  </footer>
 
-<h2>Jakie dane przechowuje aplikacja</h2>
-<p>Wszystko, co tworzysz w Mandragorze — rośliny, pokoje, harmonogramy pielęgnacji,
-historię zabiegów, rozmnażanie, zdjęcia i wpisy dziennika — jest przechowywane
-<strong>lokalnie na Twoim urządzeniu</strong> w bazie danych na urządzeniu oraz w
-lokalnej pamięci plików. Zdjęcia zapisywane są w prywatnej pamięci aplikacji. Żadne z
-tych danych nie są przesyłane do nas ani na żaden kontrolowany przez nas serwer.</p>
-
-<h2>Dane, które zbieramy</h2>
-<p><strong>Żadne.</strong> Mandragora nie ma kont, logowania, analityki ani śledzenia.
-My (wydawca) nie zbieramy, nie otrzymujemy, nie przechowujemy ani nie mamy dostępu do
-żadnych Twoich danych osobowych ani treści w aplikacji.</p>
-
-<h2>Uprawnienia</h2>
-<p><strong>Aparat</strong> — używany wyłącznie wtedy, gdy zdecydujesz się zrobić zdjęcie
-rośliny lub sadzonki. Zdjęcia są zapisywane lokalnie i nigdy nie są przez nas wysyłane.</p>
-
-<h2>Opcjonalne funkcje AI</h2>
-<p>Niektóre opcjonalne funkcje mogą korzystać z zewnętrznej usługi AI. Działają tylko
-wtedy, gdy podasz własny klucz API. Gdy aktywnie używasz takiej funkcji, wprowadzony
-przez Ciebie tekst jest wysyłany bezpośrednio z Twojego urządzenia do skonfigurowanego
-dostawcy AI, zgodnie z jego polityką prywatności. Nie otrzymujemy, nie pośredniczymy ani
-nie przechowujemy tych danych, a aplikacja nie zawiera żadnych własnych kluczy API. Jeśli
-nie wprowadzisz klucza, żadne dane nie opuszczają urządzenia.</p>
-
-<h2>Udostępnianie danych</h2>
-<p>Nie sprzedajemy, nie udostępniamy ani nie przekazujemy Twoich danych nikomu, ponieważ
-nie mamy do nich dostępu.</p>
-
-<h2>Dzieci</h2>
-<p>Mandragora jest przeznaczona dla ogółu odbiorców i nie zbiera świadomie danych od
-nikogo, w tym od dzieci.</p>
-
-<h2>Usuwanie danych</h2>
-<p>Ponieważ wszystkie dane znajdują się na Twoim urządzeniu, możesz je usunąć w dowolnym
-momencie, kasując poszczególne pozycje w aplikacji lub odinstalowując aplikację, co
-usuwa wszystkie jej dane.</p>
-
-<h2>Zmiany w polityce</h2>
-<p>W razie zmian zaktualizowana wersja zostanie opublikowana pod tym adresem z nową datą
-aktualizacji.</p>
-
-<h2>Kontakt</h2>
-<p>Pytania: <a href="mailto:marchevo.it@gmail.com">marchevo.it@gmail.com</a></p>
-
+  <script src="script.js"></script>
 </body>
 </html>
