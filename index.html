@@ -10,6 +10,8 @@
          color: #1b1b1b; }
   h1 { color: #2D6A4F; }
   h2 { color: #2D6A4F; margin-top: 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
   hr { margin: 3rem 0; border: none; border-top: 1px solid #ddd; }
   code { background: #f2f2f2; padding: 0 .3em; border-radius: 3px; }
   .muted { color: #666; font-size: .9rem; }
@@ -18,46 +20,75 @@
 <body>
 
 <h1>Mandragora — Privacy Policy</h1>
-<p class="muted">Last updated: 1 June 2026 · Developer: Marchevo (Miłosz Marchwant) · Contact: marchevo.it@gmail.com</p>
+<p class="muted">Last updated: 25 November 2026 · Applies to version 0.4.0 and later · Developer: Marchevo (Miłosz Marchwant) · Contact: marchevo.it@gmail.com</p>
 
-<p>Mandragora is an offline-first houseplant care app. We designed it so that your
-data stays on your device. This policy explains what that means.</p>
+<p>Mandragora is an offline houseplant care app. Your data stays on your device, and
+the app cannot connect to the internet. This policy explains what that means.</p>
 
 <h2>What data the app stores</h2>
 <p>Everything you create in Mandragora — your plants, rooms, care schedules, care
-history, propagations, photos, and diary entries — is stored <strong>locally on your
-device</strong> using an on-device database and your device's local file storage.
-Photos you take are saved inside the app's private storage. None of this data is
-transmitted to us or to any server we control.</p>
+history, propagations, photos, diary entries, plant problems, achievements and
+settings — is stored <strong>locally on your device</strong>, in an on-device database
+and in the app's private file storage. None of it is sent to us or to any server.</p>
 
 <h2>Data we collect</h2>
-<p><strong>None.</strong> Mandragora has no account system, no sign-in, and no analytics
-or tracking. We (the developer) do not collect, receive, store, or have access to any
-of your personal data or app content.</p>
+<p><strong>None.</strong> Mandragora has no account system, no sign-in, no analytics,
+no advertising and no tracking. We (the developer) do not collect, receive, store or
+have access to any of your personal data or app content.</p>
+
+<h2>No internet access</h2>
+<p>The app does not hold Android's internet permission, so it has no way to send or
+receive data over the network. You can check this on the app's page in Google Play
+and in your phone's app settings.</p>
+
+<h2>Backups</h2>
+<p>Android's automatic cloud backup and device-to-device transfer are <strong>switched
+off</strong> for Mandragora: your garden is not copied to your Google account. The only
+backup is the one you make yourself in Settings → Backup. That creates one file with
+your garden and photos and hands it to the app or location you choose in the system
+share sheet. Where that file goes afterwards is up to you.</p>
+
+<h2>Garden sharing</h2>
+<p>You can share a list of your plants with someone as a QR code or a file. This
+happens only when you ask for it, and the code or file goes only where you send it.
+QR codes are read on the device; nothing is uploaded.</p>
 
 <h2>Permissions</h2>
-<p><strong>Camera</strong> — used only when you choose to take a photo of a plant or a
-propagation. Photos are stored locally on your device and are never uploaded by us.</p>
+<ul>
+<li><strong>Camera</strong> — to take a photo of a plant or a cutting, and to scan a
+garden QR code. Used only when you start one of these.</li>
+<li><strong>Notifications</strong> — to show care reminders.</li>
+<li><strong>Run at start-up</strong> — to restore your scheduled reminders after the
+phone restarts.</li>
+<li><strong>Vibration</strong> — for reminders and touch feedback.</li>
+<li><strong>Storage (Android 9 and older for saving, Android 12 and older for
+reading)</strong> — to read a photo or a backup file you pick, and to save a photo you
+take. On newer Android versions the system file picker is used and this permission
+has no effect.</li>
+<li><strong>Background work (wake lock, foreground service)</strong> — declared by
+Android's background-work library (WorkManager) bundled with the app, which runs
+short tasks on the device.</li>
+</ul>
+<p>The app does not use the microphone, your location, your contacts or the
+internet.</p>
 
-<h2>Optional AI features</h2>
-<p>Some optional features may use a third-party AI service. These work only if you
-provide your own API key. When you actively use such a feature, the relevant text you
-submit is sent directly from your device to the AI provider you configured, under that
-provider's own privacy policy. We do not receive, proxy, or store this data, and the
-app ships with no API keys of its own. If you never enter a key, no data leaves your
-device.</p>
+<h2>Links that leave the app</h2>
+<p>Settings contain links to the developer's Ko-fi page and Discord server. Tapping
+one opens it in your browser or the Discord app; those services have their own
+privacy policies. The app itself sends them nothing.</p>
 
 <h2>Data sharing</h2>
-<p>We do not sell, share, or transfer your data to anyone, because we do not have access
-to it in the first place.</p>
+<p>We do not sell, share or transfer your data to anyone, because we do not have
+access to it in the first place.</p>
 
 <h2>Children</h2>
-<p>Mandragora is suitable for general audiences and does not knowingly collect data from
+<p>Mandragora is suitable for general audiences and does not collect data from
 anyone, including children.</p>
 
 <h2>Data deletion</h2>
-<p>Because all data lives on your device, you can delete it at any time by removing
-individual items in the app, or by uninstalling the app, which removes all app data.</p>
+<p>All data lives on your device. You can delete individual items in the app, or
+uninstall the app, which removes all of its data from the phone. Backup or sharing
+files you created and saved elsewhere are yours to delete.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this URL with a new
@@ -69,51 +100,81 @@ individual items in the app, or by uninstalling the app, which removes all app d
 <hr>
 
 <h1>Mandragora — Polityka prywatności</h1>
-<p class="muted">Ostatnia aktualizacja: 1 czerwca 2026 · Wydawca: Marchevo (Miłosz Marchwant) · Kontakt: marchevo.it@gmail.com</p>
+<p class="muted">Ostatnia aktualizacja: 25 listopada 2026 · Dotyczy wersji 0.4.0 i nowszych · Wydawca: Marchevo (Miłosz Marchwant) · Kontakt: marchevo.it@gmail.com</p>
 
-<p>Mandragora to aplikacja do pielęgnacji roślin domowych działająca w trybie offline.
-Zaprojektowaliśmy ją tak, aby Twoje dane pozostawały na Twoim urządzeniu.</p>
+<p>Mandragora to aplikacja do pielęgnacji roślin domowych działająca offline. Twoje
+dane zostają na Twoim urządzeniu, a aplikacja nie może łączyć się z internetem.</p>
 
 <h2>Jakie dane przechowuje aplikacja</h2>
 <p>Wszystko, co tworzysz w Mandragorze — rośliny, pokoje, harmonogramy pielęgnacji,
-historię zabiegów, rozmnażanie, zdjęcia i wpisy dziennika — jest przechowywane
-<strong>lokalnie na Twoim urządzeniu</strong> w bazie danych na urządzeniu oraz w
-lokalnej pamięci plików. Zdjęcia zapisywane są w prywatnej pamięci aplikacji. Żadne z
-tych danych nie są przesyłane do nas ani na żaden kontrolowany przez nas serwer.</p>
+historia zabiegów, rozmnażanie, zdjęcia, wpisy dziennika, przypadłości roślin,
+osiągnięcia i ustawienia — jest przechowywane <strong>lokalnie na Twoim
+urządzeniu</strong>: w bazie danych na urządzeniu i w prywatnej pamięci aplikacji.
+Nic z tego nie jest wysyłane do nas ani na żaden serwer.</p>
 
 <h2>Dane, które zbieramy</h2>
-<p><strong>Żadne.</strong> Mandragora nie ma kont, logowania, analityki ani śledzenia.
-My (wydawca) nie zbieramy, nie otrzymujemy, nie przechowujemy ani nie mamy dostępu do
-żadnych Twoich danych osobowych ani treści w aplikacji.</p>
+<p><strong>Żadne.</strong> Mandragora nie ma kont, logowania, analityki, reklam ani
+śledzenia. My (wydawca) nie zbieramy, nie otrzymujemy, nie przechowujemy ani nie mamy
+dostępu do żadnych Twoich danych osobowych ani treści w aplikacji.</p>
+
+<h2>Brak dostępu do internetu</h2>
+<p>Aplikacja nie ma uprawnienia Androida do korzystania z internetu, więc nie ma jak
+wysyłać ani odbierać danych przez sieć. Możesz to sprawdzić na stronie aplikacji w
+Google Play i w ustawieniach aplikacji w telefonie.</p>
+
+<h2>Kopie zapasowe</h2>
+<p>Automatyczna kopia Androida w chmurze i przenoszenie danych między urządzeniami są
+dla Mandragory <strong>wyłączone</strong>: Twój ogród nie jest kopiowany na konto
+Google. Jedyna kopia to ta, którą tworzysz samodzielnie w Ustawienia → Kopia
+zapasowa. Powstaje wtedy jeden plik z ogrodem i zdjęciami, który trafia do aplikacji
+lub miejsca wybranego przez Ciebie w systemowym oknie udostępniania. O dalszym losie
+tego pliku decydujesz Ty.</p>
+
+<h2>Udostępnianie ogrodu</h2>
+<p>Listę swoich roślin możesz udostępnić komuś jako kod QR albo plik. Dzieje się to
+tylko na Twoje życzenie, a kod lub plik trafia tylko tam, gdzie go wyślesz. Kody QR
+są odczytywane na urządzeniu; nic nie jest wysyłane.</p>
 
 <h2>Uprawnienia</h2>
-<p><strong>Aparat</strong> — używany wyłącznie wtedy, gdy zdecydujesz się zrobić zdjęcie
-rośliny lub sadzonki. Zdjęcia są zapisywane lokalnie i nigdy nie są przez nas wysyłane.</p>
+<ul>
+<li><strong>Aparat</strong> — żeby zrobić zdjęcie rośliny lub sadzonki oraz zeskanować
+kod QR ogrodu. Używany tylko wtedy, gdy uruchomisz jedną z tych czynności.</li>
+<li><strong>Powiadomienia</strong> — żeby pokazywać przypomnienia o pielęgnacji.</li>
+<li><strong>Uruchamianie przy starcie</strong> — żeby przywrócić zaplanowane
+przypomnienia po ponownym uruchomieniu telefonu.</li>
+<li><strong>Wibracje</strong> — przy przypomnieniach i reakcji na dotyk.</li>
+<li><strong>Pamięć (zapis: Android 9 i starsze, odczyt: Android 12 i starsze)</strong> —
+żeby odczytać wybrane przez Ciebie zdjęcie lub plik kopii i zapisać zrobione zdjęcie.
+Na nowszych wersjach Androida używane jest systemowe okno wyboru plików, a to
+uprawnienie nie ma znaczenia.</li>
+<li><strong>Praca w tle (blokada wybudzenia, usługa pierwszoplanowa)</strong> —
+deklarowana przez dołączoną do aplikacji bibliotekę Androida do pracy w tle (WorkManager),
+która wykonuje krótkie zadania na urządzeniu.</li>
+</ul>
+<p>Aplikacja nie korzysta z mikrofonu, lokalizacji, kontaktów ani internetu.</p>
 
-<h2>Opcjonalne funkcje AI</h2>
-<p>Niektóre opcjonalne funkcje mogą korzystać z zewnętrznej usługi AI. Działają tylko
-wtedy, gdy podasz własny klucz API. Gdy aktywnie używasz takiej funkcji, wprowadzony
-przez Ciebie tekst jest wysyłany bezpośrednio z Twojego urządzenia do skonfigurowanego
-dostawcy AI, zgodnie z jego polityką prywatności. Nie otrzymujemy, nie pośredniczymy ani
-nie przechowujemy tych danych, a aplikacja nie zawiera żadnych własnych kluczy API. Jeśli
-nie wprowadzisz klucza, żadne dane nie opuszczają urządzenia.</p>
+<h2>Linki prowadzące poza aplikację</h2>
+<p>W ustawieniach są linki do strony wydawcy w serwisie Ko-fi i do serwera Discord.
+Dotknięcie otwiera je w przeglądarce lub w aplikacji Discord; te serwisy mają własne
+polityki prywatności. Sama aplikacja niczego im nie wysyła.</p>
 
 <h2>Udostępnianie danych</h2>
-<p>Nie sprzedajemy, nie udostępniamy ani nie przekazujemy Twoich danych nikomu, ponieważ
-nie mamy do nich dostępu.</p>
+<p>Nie sprzedajemy, nie udostępniamy ani nie przekazujemy Twoich danych nikomu,
+ponieważ nie mamy do nich dostępu.</p>
 
 <h2>Dzieci</h2>
-<p>Mandragora jest przeznaczona dla ogółu odbiorców i nie zbiera świadomie danych od
-nikogo, w tym od dzieci.</p>
+<p>Mandragora jest przeznaczona dla ogółu odbiorców i nie zbiera danych od nikogo, w
+tym od dzieci.</p>
 
 <h2>Usuwanie danych</h2>
-<p>Ponieważ wszystkie dane znajdują się na Twoim urządzeniu, możesz je usunąć w dowolnym
-momencie, kasując poszczególne pozycje w aplikacji lub odinstalowując aplikację, co
-usuwa wszystkie jej dane.</p>
+<p>Wszystkie dane znajdują się na Twoim urządzeniu. Możesz usuwać poszczególne pozycje
+w aplikacji albo odinstalować aplikację, co usuwa z telefonu wszystkie jej dane. Pliki
+kopii lub udostępniania, które samodzielnie zapisałeś(-aś) gdzie indziej, usuwasz
+samodzielnie.</p>
 
 <h2>Zmiany w polityce</h2>
-<p>W razie zmian zaktualizowana wersja zostanie opublikowana pod tym adresem z nową datą
-aktualizacji.</p>
+<p>W razie zmian zaktualizowana wersja zostanie opublikowana pod tym adresem z nową
+datą aktualizacji.</p>
 
 <h2>Kontakt</h2>
 <p>Pytania: <a href="mailto:marchevo.it@gmail.com">marchevo.it@gmail.com</a></p>
